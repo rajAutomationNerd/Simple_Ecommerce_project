@@ -1,354 +1,277 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="9" passed="5" failed="4" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-11T14:14:08 IST" name="Suite" finished-at="2024-09-11T14:15:11 IST" duration-ms="63838">
+  <suite started-at="2024-09-11T16:38:08 IST" name="Default suite" finished-at="2024-09-11T16:38:36 IST" duration-ms="27834">
     <groups>
     </groups>
-    <test started-at="2024-09-11T14:14:08 IST" name="Test" finished-at="2024-09-11T14:15:11 IST" duration-ms="63838">
-      <class name="testCases.TC_02_registration_invalid_cred">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.TC_02_registration_invalid_cred@682b2fa]" started-at="2024-09-11T14:14:39 IST" name="setUp" finished-at="2024-09-11T14:14:44 IST" duration-ms="4760" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="test()[pri:0, instance:testCases.TC_02_registration_invalid_cred@682b2fa]" started-at="2024-09-11T14:14:44 IST" name="test" finished-at="2024-09-11T14:14:45 IST" duration-ms="1191" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Email error message is not displayed. expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Email error message is not displayed. expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertTrue(Assert.java:57)
-at testCases.TC_02_registration_invalid_cred.test(TC_02_registration_invalid_cred.java:42)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_02_registration_invalid_cred@682b2fa]" started-at="2024-09-11T14:14:45 IST" name="tearDown" finished-at="2024-09-11T14:14:47 IST" duration-ms="1705" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- testCases.TC_02_registration_invalid_cred -->
-      <class name="testCases.TC_03_registration_with_empty_details">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.TC_03_registration_with_empty_details@385c9627]" started-at="2024-09-11T14:14:18 IST" name="setUp" finished-at="2024-09-11T14:14:23 IST" duration-ms="4243" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="test()[pri:0, instance:testCases.TC_03_registration_with_empty_details@385c9627]" started-at="2024-09-11T14:14:23 IST" name="test" finished-at="2024-09-11T14:14:34 IST" duration-ms="10893" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"div[aria-label='User already exisits with this Email Id!']"}
-  (Session info: chrome=128.0.6613.120)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.24.0', revision: '748ffc9bc3'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ccd1070ea94c94b087da7c5da867268f, findElement {value=div[aria-label='User already exisits with this Email Id!'], using=css selector}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.120, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\ArtiR\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64645}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64645/devtoo..., se:cdpVersion: 128.0.6613.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: ccd1070ea94c94b087da7c5da867268f]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"div[aria-label='User already exisits with this Email Id!']"}
-  (Session info: chrome=128.0.6613.120)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.24.0', revision: '748ffc9bc3'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ccd1070ea94c94b087da7c5da867268f, findElement {value=div[aria-label='User already exisits with this Email Id!'], using=css selector}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.120, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\ArtiR\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64645}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64645/devtoo..., se:cdpVersion: 128.0.6613.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: ccd1070ea94c94b087da7c5da867268f
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy12.isDisplayed(Unknown Source)
-at pageObjects.registrationObjects.isEmailErrorDisplayed(registrationObjects.java:86)
-at testCases.TC_03_registration_with_empty_details.test(TC_03_registration_with_empty_details.java:42)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_03_registration_with_empty_details@385c9627]" started-at="2024-09-11T14:14:34 IST" name="tearDown" finished-at="2024-09-11T14:14:34 IST" duration-ms="775" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- testCases.TC_03_registration_with_empty_details -->
+    <test started-at="2024-09-11T16:38:08 IST" name="Default test" finished-at="2024-09-11T16:38:36 IST" duration-ms="27834">
       <class name="testCases.TC_01_registration_valid">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.TC_01_registration_valid@229f66ed]" started-at="2024-09-11T14:14:58 IST" name="setUp" finished-at="2024-09-11T14:15:03 IST" duration-ms="5141" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.TC_01_registration_valid@43bc63a3]" started-at="2024-09-11T16:38:09 IST" name="setUp" finished-at="2024-09-11T16:38:14 IST" duration-ms="4404" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="test()[pri:0, instance:testCases.TC_01_registration_valid@229f66ed]" started-at="2024-09-11T14:15:03 IST" name="test" finished-at="2024-09-11T14:15:05 IST" duration-ms="2087" status="FAIL">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
-            <message>
-              <![CDATA[element click intercepted: Element <input _ngcontent-emn-c44="" name="login" id="login" type="submit" value="Register" class="btn btn-block login-btn"> is not clickable at point (947, 468). Other element would receive the click: <div _ngcontent-emn-c44="" class="banner">...</div>
-  (Session info: chrome=128.0.6613.120)
-Build info: version: '4.24.0', revision: '748ffc9bc3'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4a8c41b987518d6b107ddbad18d43e55, clickElement {id=f.ED5F23622F51D2E39EC111683FCA6F1F.d.AF798DE44945288F44B2A11124A6BCDD.e.46}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.120, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\ArtiR\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64778}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64778/devtoo..., se:cdpVersion: 128.0.6613.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (4a8c41b987518d6b107ddbad18d43e55)] -> id: login]
-Session ID: 4a8c41b987518d6b107ddbad18d43e55]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <input _ngcontent-emn-c44="" name="login" id="login" type="submit" value="Register" class="btn btn-block login-btn"> is not clickable at point (947, 468). Other element would receive the click: <div _ngcontent-emn-c44="" class="banner">...</div>
-  (Session info: chrome=128.0.6613.120)
-Build info: version: '4.24.0', revision: '748ffc9bc3'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4a8c41b987518d6b107ddbad18d43e55, clickElement {id=f.ED5F23622F51D2E39EC111683FCA6F1F.d.AF798DE44945288F44B2A11124A6BCDD.e.46}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.120, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\ArtiR\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64778}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64778/devtoo..., se:cdpVersion: 128.0.6613.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (4a8c41b987518d6b107ddbad18d43e55)] -> id: login]
-Session ID: 4a8c41b987518d6b107ddbad18d43e55
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
-at pageObjects.registrationObjects.clckRegister(registrationObjects.java:81)
-at testCases.TC_01_registration_valid.test(TC_01_registration_valid.java:41)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+        <test-method signature="test(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_01_registration_valid@43bc63a3]" started-at="2024-09-11T16:38:14 IST" name="test" data-provider="registrationData" finished-at="2024-09-11T16:38:14 IST" duration-ms="818" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[QA1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Nerd_03]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[nerd_1@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1234567891]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Raj_1998@]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Raj_1998@]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_01_registration_valid@229f66ed]" started-at="2024-09-11T14:15:05 IST" name="tearDown" finished-at="2024-09-11T14:15:05 IST" duration-ms="386" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_01_registration_valid@43bc63a3]" started-at="2024-09-11T16:38:14 IST" name="tearDown" finished-at="2024-09-11T16:38:15 IST" duration-ms="232" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.TC_01_registration_valid@43bc63a3]" started-at="2024-09-11T16:38:15 IST" name="setUp" finished-at="2024-09-11T16:38:18 IST" duration-ms="3627" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="test(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_01_registration_valid@43bc63a3]" started-at="2024-09-11T16:38:18 IST" name="test" data-provider="registrationData" finished-at="2024-09-11T16:38:19 IST" duration-ms="584" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[QA2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Nerd_04]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[nerd_2@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1234567891]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Raj_1998@]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Raj_1998@]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_01_registration_valid@43bc63a3]" started-at="2024-09-11T16:38:19 IST" name="tearDown" finished-at="2024-09-11T16:38:19 IST" duration-ms="211" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.TC_01_registration_valid@43bc63a3]" started-at="2024-09-11T16:38:19 IST" name="setUp" finished-at="2024-09-11T16:38:23 IST" duration-ms="3819" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="test(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_01_registration_valid@43bc63a3]" started-at="2024-09-11T16:38:23 IST" name="test" data-provider="registrationData" finished-at="2024-09-11T16:38:23 IST" duration-ms="543" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[QA3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Nerd_05]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[nerd_3@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1234567891]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Raj_1998@]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Raj_1998@]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_01_registration_valid@43bc63a3]" started-at="2024-09-11T16:38:23 IST" name="tearDown" finished-at="2024-09-11T16:38:24 IST" duration-ms="203" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.TC_01_registration_valid@43bc63a3]" started-at="2024-09-11T16:38:24 IST" name="setUp" finished-at="2024-09-11T16:38:27 IST" duration-ms="3420" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="test(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_01_registration_valid@43bc63a3]" started-at="2024-09-11T16:38:27 IST" name="test" data-provider="registrationData" finished-at="2024-09-11T16:38:28 IST" duration-ms="560" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[QA4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Nerd_06]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[nerd_4@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1234567891]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Raj_1998@]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Raj_1998@]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_01_registration_valid@43bc63a3]" started-at="2024-09-11T16:38:28 IST" name="tearDown" finished-at="2024-09-11T16:38:28 IST" duration-ms="198" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.TC_01_registration_valid@43bc63a3]" started-at="2024-09-11T16:38:28 IST" name="setUp" finished-at="2024-09-11T16:38:31 IST" duration-ms="3233" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="test(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_01_registration_valid@43bc63a3]" started-at="2024-09-11T16:38:31 IST" name="test" data-provider="registrationData" finished-at="2024-09-11T16:38:32 IST" duration-ms="572" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[QA5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Nerd_07]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[nerd_5@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1234567891]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Raj_1998@]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Raj_1998@]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_01_registration_valid@43bc63a3]" started-at="2024-09-11T16:38:32 IST" name="tearDown" finished-at="2024-09-11T16:38:32 IST" duration-ms="232" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.TC_01_registration_valid@43bc63a3]" started-at="2024-09-11T16:38:32 IST" name="setUp" finished-at="2024-09-11T16:38:35 IST" duration-ms="3514" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="test(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_01_registration_valid@43bc63a3]" started-at="2024-09-11T16:38:35 IST" name="test" data-provider="registrationData" finished-at="2024-09-11T16:38:36 IST" duration-ms="534" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[QA6]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Nerd_08]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[nerd_6@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1234567891]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Raj_1998@]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Raj_1998@]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_01_registration_valid@43bc63a3]" started-at="2024-09-11T16:38:36 IST" name="tearDown" finished-at="2024-09-11T16:38:36 IST" duration-ms="181" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testCases.TC_01_registration_valid -->
-      <class name="testCases.TC_04_Verify_login_with_valid_cred">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.TC_04_Verify_login_with_valid_cred@217ed35e]" started-at="2024-09-11T14:14:47 IST" name="setUp" finished-at="2024-09-11T14:14:52 IST" duration-ms="5443" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="loginTest()[pri:0, instance:testCases.TC_04_Verify_login_with_valid_cred@217ed35e]" started-at="2024-09-11T14:14:52 IST" name="loginTest" finished-at="2024-09-11T14:14:52 IST" duration-ms="371" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_04_Verify_login_with_valid_cred@217ed35e]" started-at="2024-09-11T14:14:52 IST" name="tearDown" finished-at="2024-09-11T14:14:53 IST" duration-ms="242" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- testCases.TC_04_Verify_login_with_valid_cred -->
-      <class name="testCases.TC_08_Verify_forgotPassword_WithValid_Email">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.TC_08_Verify_forgotPassword_WithValid_Email@6989da5e]" started-at="2024-09-11T14:14:14 IST" name="setUp" finished-at="2024-09-11T14:14:17 IST" duration-ms="3488" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="Verify_with_valid_email()[pri:0, instance:testCases.TC_08_Verify_forgotPassword_WithValid_Email@6989da5e]" started-at="2024-09-11T14:14:17 IST" name="Verify_with_valid_email" finished-at="2024-09-11T14:14:18 IST" duration-ms="595" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verify_with_valid_email -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_08_Verify_forgotPassword_WithValid_Email@6989da5e]" started-at="2024-09-11T14:14:18 IST" name="tearDown" finished-at="2024-09-11T14:14:18 IST" duration-ms="368" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- testCases.TC_08_Verify_forgotPassword_WithValid_Email -->
-      <class name="testCases.TC_05_Verify_login_with_valid_email_invalidPassword">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.TC_05_Verify_login_with_valid_email_invalidPassword@3590fc5b]" started-at="2024-09-11T14:14:08 IST" name="setUp" finished-at="2024-09-11T14:14:13 IST" duration-ms="5256" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="loginTest()[pri:0, instance:testCases.TC_05_Verify_login_with_valid_email_invalidPassword@3590fc5b]" started-at="2024-09-11T14:14:13 IST" name="loginTest" finished-at="2024-09-11T14:14:14 IST" duration-ms="686" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_05_Verify_login_with_valid_email_invalidPassword@3590fc5b]" started-at="2024-09-11T14:14:14 IST" name="tearDown" finished-at="2024-09-11T14:14:14 IST" duration-ms="267" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- testCases.TC_05_Verify_login_with_valid_email_invalidPassword -->
-      <class name="testCases.TC_07_Verify_login_without_credentials">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.TC_07_Verify_login_without_credentials@139982de]" started-at="2024-09-11T14:14:34 IST" name="setUp" finished-at="2024-09-11T14:14:39 IST" duration-ms="4207" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="loginTest()[pri:0, instance:testCases.TC_07_Verify_login_without_credentials@139982de]" started-at="2024-09-11T14:14:39 IST" name="loginTest" finished-at="2024-09-11T14:14:39 IST" duration-ms="171" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_07_Verify_login_without_credentials@139982de]" started-at="2024-09-11T14:14:39 IST" name="tearDown" finished-at="2024-09-11T14:14:39 IST" duration-ms="202" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- testCases.TC_07_Verify_login_without_credentials -->
-      <class name="testCases.TC_06_Verify_login_with_invalid_email_validPassword">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.TC_06_Verify_login_with_invalid_email_validPassword@31190526]" started-at="2024-09-11T14:15:05 IST" name="setUp" finished-at="2024-09-11T14:15:11 IST" duration-ms="5464" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="loginTest()[pri:0, instance:testCases.TC_06_Verify_login_with_invalid_email_validPassword@31190526]" started-at="2024-09-11T14:15:11 IST" name="loginTest" finished-at="2024-09-11T14:15:11 IST" duration-ms="528" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Email error message is not displayed. expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Email error message is not displayed. expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertTrue(Assert.java:57)
-at testCases.TC_06_Verify_login_with_invalid_email_validPassword.loginTest(TC_06_Verify_login_with_invalid_email_validPassword.java:21)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_06_Verify_login_with_invalid_email_validPassword@31190526]" started-at="2024-09-11T14:15:11 IST" name="tearDown" finished-at="2024-09-11T14:15:11 IST" duration-ms="239" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- testCases.TC_06_Verify_login_with_invalid_email_validPassword -->
-      <class name="testCases.TC_09_Verify_forgotPassword_WithInValid_Email">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.TC_09_Verify_forgotPassword_WithInValid_Email@7dcf94f8]" started-at="2024-09-11T14:14:53 IST" name="setUp" finished-at="2024-09-11T14:14:57 IST" duration-ms="4149" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="Verify_with_Invalid_email()[pri:0, instance:testCases.TC_09_Verify_forgotPassword_WithInValid_Email@7dcf94f8]" started-at="2024-09-11T14:14:57 IST" name="Verify_with_Invalid_email" finished-at="2024-09-11T14:14:57 IST" duration-ms="608" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verify_with_Invalid_email -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_09_Verify_forgotPassword_WithInValid_Email@7dcf94f8]" started-at="2024-09-11T14:14:57 IST" name="tearDown" finished-at="2024-09-11T14:14:58 IST" duration-ms="278" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- testCases.TC_09_Verify_forgotPassword_WithInValid_Email -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
