@@ -22,6 +22,8 @@ public class loginPage {
 	@FindBy(id="login")
 	WebElement login;
 	
+	@FindBy(xpath="//div[@aria-label='Incorrect email or password.']")
+	WebElement FieldError;
 	
 	public void userEmail(String mail)
 	{
@@ -36,6 +38,11 @@ public class loginPage {
 	public void loginButton()
 	{
 		login.click();
+	}
+	
+	public boolean ErrorMessage()
+	{
+		return FieldError.isDisplayed();
 	}
 
 }

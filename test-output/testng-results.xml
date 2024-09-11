@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-11T12:27:17 IST" name="Default suite" finished-at="2024-09-11T12:27:21 IST" duration-ms="4496">
+  <suite started-at="2024-09-11T12:56:37 IST" name="Default suite" finished-at="2024-09-11T12:56:44 IST" duration-ms="6978">
     <groups>
     </groups>
-    <test started-at="2024-09-11T12:27:17 IST" name="Default test" finished-at="2024-09-11T12:27:21 IST" duration-ms="4496">
-      <class name="testCases.TC_04_Verify_login_with_valid_cred">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.TC_04_Verify_login_with_valid_cred@73a1e9a9]" started-at="2024-09-11T12:27:17 IST" name="setUp" finished-at="2024-09-11T12:27:21 IST" duration-ms="3947" status="PASS">
+    <test started-at="2024-09-11T12:56:37 IST" name="Default test" finished-at="2024-09-11T12:56:44 IST" duration-ms="6978">
+      <class name="testCases.TC_05_Verify_login_with_valid_email_invalidPassword">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.TC_05_Verify_login_with_valid_email_invalidPassword@73a1e9a9]" started-at="2024-09-11T12:56:37 IST" name="setUp" finished-at="2024-09-11T12:56:43 IST" duration-ms="5901" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginTest()[pri:0, instance:testCases.TC_04_Verify_login_with_valid_cred@73a1e9a9]" started-at="2024-09-11T12:27:21 IST" name="loginTest" finished-at="2024-09-11T12:27:21 IST" duration-ms="299" status="PASS">
+        <test-method signature="loginTest()[pri:0, instance:testCases.TC_05_Verify_login_with_valid_email_invalidPassword@73a1e9a9]" started-at="2024-09-11T12:56:43 IST" name="loginTest" finished-at="2024-09-11T12:56:43 IST" duration-ms="633" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_04_Verify_login_with_valid_cred@73a1e9a9]" started-at="2024-09-11T12:27:21 IST" name="tearDown" finished-at="2024-09-11T12:27:21 IST" duration-ms="216" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_05_Verify_login_with_valid_email_invalidPassword@73a1e9a9]" started-at="2024-09-11T12:56:43 IST" name="tearDown" finished-at="2024-09-11T12:56:44 IST" duration-ms="385" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- testCases.TC_04_Verify_login_with_valid_cred -->
+      </class> <!-- testCases.TC_05_Verify_login_with_valid_email_invalidPassword -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
