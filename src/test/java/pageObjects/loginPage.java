@@ -25,6 +25,14 @@ public class loginPage {
 	@FindBy(xpath="//div[@aria-label='Incorrect email or password.']")
 	WebElement FieldError;
 	
+	@FindBy(xpath="//div[text()='*Email is required']")
+	WebElement emptyEmail;
+	
+	@FindBy(xpath="//div[text()='*Password is required']")
+	WebElement emptyPassword;
+	
+	
+	
 	public void userEmail(String mail)
 	{
 		Uemail.sendKeys(mail);
@@ -40,9 +48,21 @@ public class loginPage {
 		login.click();
 	}
 	
-	public boolean ErrorMessage()
+	public boolean ErrorOrPasswordEMessage()
 	{
 		return FieldError.isDisplayed();
 	}
+	
+	public boolean EmptyEmailError()
+	{
+		return emptyEmail.isDisplayed();
+	}
+	
+	public boolean EmptyPasswordError()
+	{
+		return emptyPassword.isDisplayed();
+	}
+
+	
 
 }

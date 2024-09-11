@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 import pageObjects.loginPage;
 import testBase.test_base;
 
-public class TC_05_Verify_login_with_valid_email_invalidPassword extends test_base {
+public class TC_06_Verify_login_with_invalid_email_validPassword extends test_base {
 	
 	
 	
