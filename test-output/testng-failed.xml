@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testCases.TC_02_registration_invalid_cred">
+      <class name="testCases.TC_04_Verify_login_with_valid_cred">
         <methods>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="test"/>
+          <include name="loginTest"/>
         </methods>
-      </class> <!-- testCases.TC_02_registration_invalid_cred -->
+      </class> <!-- testCases.TC_04_Verify_login_with_valid_cred -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
