@@ -17,7 +17,7 @@ import pageObjects.homePage;
 import pageObjects.registrationObjects;
 import testBase.test_base;
 
-public class TC_01_registration_valid extends test_base {
+public class TC_01_registration_With_multiplle_setsOfData extends test_base {
 
     @DataProvider(name = "registrationData")
     public Object[][] provideData() throws IOException {
